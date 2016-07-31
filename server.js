@@ -5,17 +5,17 @@ var express=require('express'),
     router=express.Router(),
     models=require('./models');
 
+app.set('view engine', 'jade');
+app.set('views', __dirname+'/VIEWS');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-
-
 router.use(function(req,res,next){
   console.log("Something is happening");
   next();
 });
 
 router.get('/',function(req,res){
-  res.json({message: 'welcome to my API!'});
+  res.render('index', {message: 'welcome to my API!', title:'Home'});
 });
 
 router.route('/bears')
