@@ -2,15 +2,18 @@
   "name": "clintRestful",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "~1.0.1",
+    "connect": "^3.4.1",
     "express": "~4.0.0",
-    "mongoose": "~3.6.13",
-    "body-parser": "~1.0.1"
+    "mongoose": "~3.6.13"
   },
   "devDependencies": {
     "bookshelf": "^0.10.0",
+    "connect": "^3.4.1",
     "jade": "^1.11.0",
     "knex": "^0.11.9",
     "lodash": "^4.14.0",
+    "method-override": "^2.3.6",
     "pg": "^6.0.3",
     "when": "^3.7.7"
   }

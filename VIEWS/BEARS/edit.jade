@@ -1,0 +1,6 @@
+form(action='/api/bears/#{bear.id}/edit?_method=PUT',method='post',name='_method',enctype='application/x-www-form-urlencoded')
+        p Name:
+            input#inputName(type='text', value='#{bear.name}', name='name')
+        p
+            button#btnSubmit(type='submit').
+                Update

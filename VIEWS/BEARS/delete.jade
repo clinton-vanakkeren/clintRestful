@@ -1,0 +1,6 @@
+form(action='/api/bears/#{bear.id}/delete?_method=DELETE',method='post',name='_method',enctype='application/x-www-form-urlencoded')
+   p Name: #{bear.name}
+   p Id: #{bear.id}
+   p
+      button#btnSubmit(type='submit').
+       Delete

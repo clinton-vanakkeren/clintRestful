@@ -1,0 +1,10 @@
+html
+  head
+    title=title
+  body
+    h1=message
+    form#formAddBear(name="addbear",method="post",action="/api/bears")
+      p Name:
+            input#inputName(type="text", placeholder="ex. John Smith", name="name")
+      p
+            button#btnSubmit(type="submit") submit
